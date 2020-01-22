@@ -14,16 +14,17 @@ This guide is for mac but should be about the same for linux.
 4. Check out the pjproject from their SVN repo. (https://svn.pjsip.org/repos/pjproject/trunk) 
 
 5. Create a config_site.h file with the following:
+```
+/* Activate Android specific settings in the 'config_site_sample.h' */
+#define PJ_CONFIG_ANDROID 1
+// Uncomment to get minimum footprint (suitable for 1-2 concurrent calls only)
+//#define PJ_CONFIG_MINIMAL_SIZE
 
-    /* Activate Android specific settings in the 'config_site_sample.h' */
-    #define PJ_CONFIG_ANDROID 1
-    // Uncomment to get minimum footprint (suitable for 1-2 concurrent calls only)
-    //#define PJ_CONFIG_MINIMAL_SIZE
+// Uncomment to get maximum performance
+//#define PJ_CONFIG_MAXIMUM_SPEED
 
-    // Uncomment to get maximum performance
-    //#define PJ_CONFIG_MAXIMUM_SPEED
-
-    #include <pj/config_site_sample.h> 
+#include <pj/config_site_sample.h> 
+```
 
 6. Place your new config_site.h file in pjproject/pjlib/include/pj/
     (I just cd to the directory and create it with: $nano config_site.h)
