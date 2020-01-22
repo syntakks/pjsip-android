@@ -75,7 +75,7 @@ This step should produce:
 native library libpjsua2.so in pjsip-apps/src/swig/java/android/app/src/main/jniLibs/armeabi
 note: if you are building for other target ABI, you'll need to manually move libpjsua2.so to the appropriate target ABI directory, e.g: jniLibs/armeabi-v7a, please check ​here for target ABI directory names.
 
-11. Create your Anroid Project (In it's own directory) and copy files over:
+11. Create your Android Project (In it's own directory) and copy files over:
 Get pjsua2 Java interface and native library from pjsua2 sample application:
 Copy pjsua2 Java interface files from pjsip-apps/src/swig/java/android/app/src/main/java to your project's app/src/main/java folder, e.g:
 ```
