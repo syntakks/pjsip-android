@@ -6,9 +6,13 @@ Below are instructions of how I built the starter files if you want to do it you
 This guide is for mac but should be about the same for linux. 
 
 #1: Download Android SDK (Android Studio)
+
 #2: Download Android NDK https://developer.android.com/ndk
+
 #3: Using Homebrew install Swig. (brew install swig)
+
 #4: Check out the pjproject from their SVN repo. (https://svn.pjsip.org/repos/pjproject/trunk) 
+
 #5: Create a config_site.h file with the following:
 
     /* Activate Android specific settings in the 'config_site_sample.h' */
